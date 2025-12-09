@@ -1,0 +1,23 @@
+uuid: 5bf63f7c-c5d1-4e7e-81dc-1b2dc379d4ab
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JXYDC3SLZUXSwnTjR9rBo6uZF3vDSZd8S7EA5ZOH7kM
+name: thumbnail
+label: 'Мініатюра (100×100)'
+effects:
+  3cba8d41-b5a1-435e-918f-bb6e6b074467:
+    uuid: 3cba8d41-b5a1-435e-918f-bb6e6b074467
+    id: image_convert_avif
+    weight: -8
+    data:
+      extension: webp
+  efdbaf79-5615-4427-bdbf-7eb9a9ef0b7b:
+    uuid: efdbaf79-5615-4427-bdbf-7eb9a9ef0b7b
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 100
+      height: 100
+      anchor: center-center

@@ -1,0 +1,23 @@
+uuid: 475688d9-079f-4d11-9cde-03a825460f3a
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aUG-EM9kKTKhcsdttoYmG5tug7pU2mNOQzcpp91jfFQ
+name: medium
+label: 'Середній (220×220)'
+effects:
+  e1b02c36-83cf-4fcc-90ae-d3f8db97c741:
+    uuid: e1b02c36-83cf-4fcc-90ae-d3f8db97c741
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp
+  6bc070af-2ac0-4831-92ac-b6a3f71073ec:
+    uuid: 6bc070af-2ac0-4831-92ac-b6a3f71073ec
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

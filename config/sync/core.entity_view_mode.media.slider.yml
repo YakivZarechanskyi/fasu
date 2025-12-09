@@ -1,0 +1,11 @@
+uuid: 29dc18cf-3a4c-49cc-944b-696dd547ddd6
+langcode: uk
+status: true
+dependencies:
+  module:
+    - media
+id: media.slider
+label: Слайдер
+description: null
+targetEntityType: media
+cache: true

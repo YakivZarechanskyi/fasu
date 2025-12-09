@@ -1,0 +1,29 @@
+uuid: 4a350983-0f49-4f4e-8b95-ecf027aed8ab
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - fasu_theme
+id: fasu_theme_views_block__slider_block_1
+theme: fasu_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

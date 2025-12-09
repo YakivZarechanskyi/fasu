@@ -1,0 +1,25 @@
+uuid: a7d096cc-55e8-4331-bbe2-502ed5bbaef6
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - fasu_theme
+id: fasu_theme_osnovnanavigaciya
+theme: fasu_theme
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основна навіґація'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

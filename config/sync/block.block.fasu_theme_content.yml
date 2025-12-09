@@ -1,0 +1,22 @@
+uuid: 0aa14830-ae4e-40fd-b53f-3af493544252
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fasu_theme
+_core:
+  default_config_hash: FR6TscQ_wWvu_Oif0Ha6seHBgJwsupKvwisRs1yTxYw
+id: fasu_theme_content
+theme: fasu_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 1696d9ee-47d1-46c1-932c-9d5b4363e8f4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fasu_theme
+_core:
+  default_config_hash: 5p6onlbwg8IfOoLBo-hjKA7w3Wmb37ZZxGGxZp5vVm8
+id: fasu_theme_page_title
+theme: fasu_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 1af1334c-c270-4985-b454-147e19877e61
+langcode: uk
+status: true
+dependencies: {  }
+name: Слайдер
+vid: slider
+description: null
+weight: 0
+new_revision: false

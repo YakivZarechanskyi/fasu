@@ -1,0 +1,22 @@
+uuid: 8dfd7777-9790-4f7f-b071-c194c5f86401
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fasu_theme
+_core:
+  default_config_hash: KpBqqBIyNPTNavLklXPC1-cUAeuwAbBOsrvGussFh1E
+id: fasu_theme_breadcrumbs
+theme: fasu_theme
+region: page_title
+weight: 10
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

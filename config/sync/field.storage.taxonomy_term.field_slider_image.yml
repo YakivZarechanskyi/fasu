@@ -1,0 +1,20 @@
+uuid: 6a31a1f1-958b-4cfe-96eb-b2254563b72c
+langcode: uk
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_slider_image
+field_name: field_slider_image
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

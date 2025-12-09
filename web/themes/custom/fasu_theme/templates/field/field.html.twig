@@ -48,18 +48,59 @@
 %}
 {%
   set title_classes = [
-    'field__label',
-    label_display == 'visually_hidden' ? 'visually-hidden',
-  ]
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
 %}
-{% if extra.relink %}
-  <a href="{{ extra.relink }}" target="_blank">
-{% endif %}
 
-  {% for item in items %}
-    <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
-  {% endfor %}
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes.addClass(classes, 'field__items') }}>
+      {% if extra.relink %}
+      <a href="{{ extra.relink }}" target="_blank">
+        {% endif %}
 
-{% if extra.relink %}
-  </a>
+        {% for item in items %}
+          <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+        {% endfor %}
+
+        {% if extra.relink %}
+      </a>
+      {% endif %}
+    </div>
+  {% else %}
+    {% if extra.relink %}
+      <a href="{{ extra.relink }}" target="_blank">
+      {% endif %}
+
+      {% for item in items %}
+        <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
+      {% endfor %}
+
+      {% if extra.relink %}
+      </a>
+    {% endif %}
+  {% endif %}
+{% else %}
+  <div{{ attributes.addClass(classes) }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    {% if multiple %}
+    <div class="field__items">
+      {% endif %}
+
+      {% if extra.relink %}
+      <a href="{{ extra.relink }}" target="_blank">
+        {% endif %}
+
+        {% for item in items %}
+          <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+        {% endfor %}
+
+        {% if extra.relink %}
+      </a>
+      {% endif %}
+      {% if multiple %}
+    </div>
+    {% endif %}
+  </div>
 {% endif %}

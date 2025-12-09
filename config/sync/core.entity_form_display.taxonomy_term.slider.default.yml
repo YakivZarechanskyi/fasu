@@ -1,0 +1,52 @@
+uuid: 186860b5-78a3-4604-b4bb-1c4007cc58b9
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.slider.field_slider_image
+    - taxonomy.vocabulary.slider
+  module:
+    - media_library
+    - path
+id: taxonomy_term.slider.default
+targetEntityType: taxonomy_term
+bundle: slider
+mode: default
+content:
+  field_slider_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true

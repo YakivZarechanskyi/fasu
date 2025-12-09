@@ -1,0 +1,25 @@
+uuid: 47f15fc0-8a81-42c2-9b91-1fdad49e83ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fasu_theme
+_core:
+  default_config_hash: lOdPdXWPbE5QLAuSRidWj90DTENmQzKLeNjvr64juyo
+id: fasu_theme_branding
+theme: fasu_theme
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

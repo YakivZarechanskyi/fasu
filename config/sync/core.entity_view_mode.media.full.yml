@@ -1,0 +1,13 @@
+uuid: 89802aa4-26b7-4ac6-8b89-d925f4ffb5cf
+langcode: uk
+status: false
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dTfAUHooYV0uOVPO3saGpgv-c5PppJXDwxvwRTJOycM
+id: media.full
+label: 'Повний вміст'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,14 @@
+uuid: b92b903b-6cf2-4bd4-b0a0-6e9cf9d8e2f5
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: "Зворотний зв'язок вебсайту"
+recipients:
+  - admin@example.com
+reply: ''
+weight: 0
+message: 'Ваше повідомлення було відправлене.'
+redirect: ''

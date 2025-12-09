@@ -1,0 +1,50 @@
+uuid: ee0666fe-2673-4b64-a88f-a5b52357d13a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.federation_members.field_contact_info
+    - field.field.node.federation_members.field_description
+    - field.field.node.federation_members.field_image
+    - field.field.node.federation_members.field_link
+    - node.type.federation_members
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.federation_members.default
+targetEntityType: node
+bundle: federation_members
+mode: default
+content:
+  field_contact_info:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_link: true
+  langcode: true
+  links: true

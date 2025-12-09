@@ -1,0 +1,18 @@
+uuid: d47806ea-eb6d-491a-9375-5d7a778ad7bb
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.federation_members
+id: node.federation_members.title
+field_name: title
+entity_type: node
+bundle: federation_members
+label: 'Назва учасника'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

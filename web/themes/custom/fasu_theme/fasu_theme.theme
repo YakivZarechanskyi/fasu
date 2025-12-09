@@ -36,7 +36,7 @@ function fasu_theme_preprocess_field(&$variables) {
 
   if ($variables['entity_type'] === 'node') {
     if ($bundle === 'federation_members') {
-      if ($variables['field_name'] === 'field_image') {
+      if (in_array($variables['field_name'], ['field_image', 'title'])) {
         if (!$entity->get('field_link')->isEmpty()) {
           $variables['extra']['relink'] = $entity->get('field_link')
             ->first()

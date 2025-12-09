@@ -1,0 +1,21 @@
+uuid: d5d94631-cd2c-403a-ad6d-e3ab6d61bace
+langcode: uk
+status: true
+dependencies: {  }
+name: slider
+label: 'Слайдер [1600x900]'
+effects:
+  173a4482-0572-434c-84aa-99c022db0b33:
+    uuid: 173a4482-0572-434c-84aa-99c022db0b33
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1600
+      height: 600
+      anchor: center-center
+  6c0521e6-d553-4d35-9f98-c4167e4c1bcf:
+    uuid: 6c0521e6-d553-4d35-9f98-c4167e4c1bcf
+    id: image_convert_avif
+    weight: -10
+    data:
+      extension: webp

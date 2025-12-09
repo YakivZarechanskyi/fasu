@@ -1,0 +1,25 @@
+uuid: 8e611f0a-d33e-41d2-944c-d7f11e1c8b8c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - fasu_theme
+id: fasu_theme_nizhniykolontitul
+theme: fasu_theme
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Нижній колонтитул'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

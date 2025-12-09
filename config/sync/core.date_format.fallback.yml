@@ -1,0 +1,10 @@
+uuid: 5c70e858-1c19-4511-8e69-744516f8c9d7
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iIBLu1j9n6Oo5PW-wpu5gdyNs9Kvv4LMRqtQUdJjRz8
+id: fallback
+label: 'Резервний формат дати'
+locked: true
+pattern: 'D, j M Y - H:i'

@@ -1,0 +1,11 @@
+uuid: d401694a-5618-48eb-b54b-1338a32cc317
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.federation_members
+id: node.federation_members
+target_entity_type_id: node
+target_bundle: federation_members
+default_langcode: site_default
+language_alterable: false

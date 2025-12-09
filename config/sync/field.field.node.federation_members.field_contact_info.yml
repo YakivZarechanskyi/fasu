@@ -1,0 +1,26 @@
+uuid: 74ab027b-58df-4bb8-86ad-5f4845a79012
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_info
+    - filter.format.basic_html
+    - filter.format.restricted_html
+    - node.type.federation_members
+  module:
+    - text
+id: node.federation_members.field_contact_info
+field_name: field_contact_info
+entity_type: node
+bundle: federation_members
+label: 'Контактна інформація'
+description: 'Контактна інформація учасника федерація.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+field_type: text_long

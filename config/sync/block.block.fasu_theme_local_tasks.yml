@@ -1,0 +1,22 @@
+uuid: 4b7cc83d-a17e-41e2-a2aa-e24d845a8243
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fasu_theme
+_core:
+  default_config_hash: bqcUyJfypWnp1brZbJafXVGafynv0TAEfKEDh4893qM
+id: fasu_theme_local_tasks
+theme: fasu_theme
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

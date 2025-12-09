@@ -1,0 +1,11 @@
+uuid: e9453f58-c7cc-458e-a181-eff55775b71d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.slider
+id: taxonomy_term.slider
+target_entity_type_id: taxonomy_term
+target_bundle: slider
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: aa7a6fd4-0b9b-43b0-87df-c2e28b9c4645
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fasu_theme
+_core:
+  default_config_hash: 72nlwRjqiXBAwD4_Wzf9YVMhGeEnqWlHF8NS6KoI7Js
+id: fasu_theme_local_actions
+theme: fasu_theme
+region: content
+weight: -30
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

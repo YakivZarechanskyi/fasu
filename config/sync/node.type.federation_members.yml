@@ -1,0 +1,17 @@
+uuid: 72817d6e-5efe-414a-bda0-85950b13cc0d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Учасники федерації'
+type: federation_members
+description: 'Інформація про учасників федерації, а саме контактна інформація, зображення, посилання та короткий опис.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false
