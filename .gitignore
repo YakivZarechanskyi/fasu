@@ -11,6 +11,7 @@
 
 # Ignore paths that may contain user-generated content
 /web/sites/*/files
+!/web/sites/*/files/site_images
 /web/sites/*/public
 /web/sites/*/private
 /web/sites/*/files-public
