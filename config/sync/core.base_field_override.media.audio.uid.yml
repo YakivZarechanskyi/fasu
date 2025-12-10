@@ -1,0 +1,20 @@
+uuid: 57e0a8e6-edb9-430d-98db-50102762400a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.uid
+field_name: uid
+entity_type: media
+bundle: audio
+label: Автор
+description: 'Ідентифікатор користувача, що є автором.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

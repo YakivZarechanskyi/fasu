@@ -1,0 +1,21 @@
+uuid: 3fce0e5c-86f0-4782-9de5-37ce10afa6f9
+langcode: uk
+status: true
+dependencies: {  }
+name: profile
+label: 'Профіль [190х230]'
+effects:
+  14fe7ee0-ab9d-48a9-a788-e69f45d60588:
+    uuid: 14fe7ee0-ab9d-48a9-a788-e69f45d60588
+    id: image_convert_avif
+    weight: 1
+    data:
+      extension: webp
+  8bcc83aa-49c4-436f-9f25-83c9c2809624:
+    uuid: 8bcc83aa-49c4-436f-9f25-83c9c2809624
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 190
+      height: 230
+      anchor: center-center

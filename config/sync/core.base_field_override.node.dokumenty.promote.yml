@@ -1,0 +1,22 @@
+uuid: 36cd0a49-8e4f-4c32-93e0-a524d8d1abd0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.dokumenty
+id: node.dokumenty.promote
+field_name: promote
+entity_type: node
+bundle: dokumenty
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

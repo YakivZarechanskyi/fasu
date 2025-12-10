@@ -1,0 +1,25 @@
+uuid: e81df196-0674-4b5d-a962-ff5106885224
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+id: zahalnyy_shablon_dlya_vmistu
+label: 'Загальний шаблон для вмісту'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  d60db95c-db8c-4075-aa43-5ed5ef0c3151:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d60db95c-db8c-4075-aa43-5ed5ef0c3151
+    context_mapping:
+      node: node
+    bundles:
+      dokumenty: dokumenty
+      page: page
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Мова

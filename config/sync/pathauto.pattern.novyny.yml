@@ -1,0 +1,22 @@
+uuid: 07d9b7fe-3438-4deb-814a-820a22316d8b
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+id: novyny
+label: Новини
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]-[node:nid]'
+selection_criteria:
+  149b1712-1ea6-41c4-aac8-749ee267cbdc:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 149b1712-1ea6-41c4-aac8-749ee267cbdc
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

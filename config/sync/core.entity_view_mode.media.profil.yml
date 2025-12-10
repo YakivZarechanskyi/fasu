@@ -1,0 +1,11 @@
+uuid: 22785725-1718-4423-b43d-8015c534c52b
+langcode: uk
+status: true
+dependencies:
+  module:
+    - media
+id: media.profil
+label: Профіль
+description: 'Відображення фото людини, профіль.'
+targetEntityType: media
+cache: true

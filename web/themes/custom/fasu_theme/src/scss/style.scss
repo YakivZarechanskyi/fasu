@@ -15,7 +15,7 @@
 
   .region-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -50,4 +50,15 @@
 
 .row {
   margin-top: auto;
+}
+
+.staff-card {
+  max-width: 192px;
+}
+
+.phone-number::before {
+  content: url('../images/phone.svg');
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: -2px;
 }

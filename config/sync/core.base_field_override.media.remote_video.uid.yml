@@ -1,0 +1,20 @@
+uuid: ec5f267e-ac18-4642-b612-97d9cdb66a77
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.uid
+field_name: uid
+entity_type: media
+bundle: remote_video
+label: Автор
+description: 'Ідентифікатор користувача, що є автором.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

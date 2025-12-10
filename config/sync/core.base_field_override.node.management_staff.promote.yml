@@ -1,0 +1,22 @@
+uuid: 3916d3cd-0e08-407a-927c-bb337835400b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.management_staff
+id: node.management_staff.promote
+field_name: promote
+entity_type: node
+bundle: management_staff
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

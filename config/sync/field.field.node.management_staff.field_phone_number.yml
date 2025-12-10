@@ -1,0 +1,21 @@
+uuid: 397270ad-029d-4441-89b0-5a1f170f53a3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.management_staff
+  module:
+    - telephone
+id: node.management_staff.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: management_staff
+label: Телефон
+description: 'Номер телефону керівника (опційно).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

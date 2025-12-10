@@ -1,0 +1,20 @@
+uuid: 1f962871-8d26-4c62-882c-5b129b3aacd7
+langcode: uk
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - fasu_theme
+id: fasu_theme_peremikachmovi
+theme: fasu_theme
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Перемикач мови'
+  label_display: '0'
+  provider: language
+visibility: {  }

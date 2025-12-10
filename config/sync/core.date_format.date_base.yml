@@ -1,0 +1,8 @@
+uuid: 6a5895fd-32d1-4bb8-956d-8f65a0946065
+langcode: uk
+status: true
+dependencies: {  }
+id: date_base
+label: 'Базова дата'
+locked: false
+pattern: 'l, j F Y'

@@ -1,0 +1,20 @@
+uuid: afb07666-2728-4398-87c3-8641df098c6f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.name
+field_name: name
+entity_type: media
+bundle: document
+label: "Назва (ім'я)"
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

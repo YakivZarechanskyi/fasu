@@ -1,0 +1,17 @@
+uuid: c9203c23-c701-4d66-adf6-10600ab7115f
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Керівництво
+type: management_staff
+description: 'Керівники федерації, опис посади та контактна інформація.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

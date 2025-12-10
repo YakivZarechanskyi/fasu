@@ -1,0 +1,18 @@
+uuid: 4935bc8c-87e3-400e-bc15-15c8eaf9cb46
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.changed
+field_name: changed
+entity_type: media
+bundle: remote_video
+label: Змінено
+description: "Час останнього редагування медіа-об'єкта."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

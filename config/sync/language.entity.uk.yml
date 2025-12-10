@@ -3,7 +3,7 @@ langcode: uk
 status: true
 dependencies: {  }
 id: uk
-label: Українська
+label: UKR
 direction: ltr
 weight: 0
 locked: false

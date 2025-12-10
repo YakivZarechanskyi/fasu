@@ -19,6 +19,7 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
+  drw: 0
   dxpr_theme_helper: 0
   dynamic_page_cache: 0
   editor: 0
@@ -42,6 +43,7 @@ module:
   media_library: 0
   media_library_form_element: 0
   menu_link_content: 0
+  menu_multilingual: 0
   menu_ui: 0
   mysql: 0
   node: 0
@@ -54,10 +56,13 @@ module:
   standard: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   text: 0
+  token: 0
   toolbar: 0
   user: 0
   views_ui: 0
+  pathauto: 1
   content_translation: 10
   views: 10
 theme:

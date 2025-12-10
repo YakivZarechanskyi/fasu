@@ -1,7 +1,14 @@
 uuid: 7804aea7-89d5-4bb4-bdbe-24ec826a08a1
 langcode: uk
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: i0snV8Wj--OkRW12UdachUiYiz3FbeMwHu_pZYfzKLc
 name: 'Проста сторінка'

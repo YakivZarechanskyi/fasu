@@ -1,0 +1,29 @@
+uuid: 8ab00173-0c1b-4ac7-866f-2ddb3ac16cf9
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.management_staff
+    - taxonomy.vocabulary.position
+id: node.management_staff.field_position
+field_name: field_position
+entity_type: node
+bundle: management_staff
+label: 'Роль / Посада'
+description: 'Роль керівника або його посада в федерації.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      position: position
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

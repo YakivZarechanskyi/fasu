@@ -1,0 +1,20 @@
+uuid: 64b6150a-ca1b-47b8-80d2-32578ca2e4dc
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.uid
+field_name: uid
+entity_type: media
+bundle: document
+label: Автор
+description: 'Ідентифікатор користувача, що є автором.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

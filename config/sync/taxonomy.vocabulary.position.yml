@@ -1,0 +1,9 @@
+uuid: bf97a31d-0df2-48f1-ba90-03aa5a617462
+langcode: uk
+status: true
+dependencies: {  }
+name: Посада
+vid: position
+description: 'Назва посади або ролі.'
+weight: 0
+new_revision: false

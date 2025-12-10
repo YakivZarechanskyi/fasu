@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.article.field_image
     - node.type.article
   module:
-    - datetime
+    - drw
     - media_library
     - path
     - text
@@ -36,10 +36,16 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_date:
-    type: datetime_default
+    type: drw_date_range
     weight: 1
     region: content
-    settings: {  }
+    settings:
+      min_date: ''
+      max_date: ''
+      min_error_message: ''
+      max_error_message: ''
+      required_error_message: ''
+      enable_custom_error_messages: false
     third_party_settings: {  }
   field_image:
     type: media_library_widget

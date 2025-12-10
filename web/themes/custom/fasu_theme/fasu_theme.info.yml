@@ -45,7 +45,7 @@ libraries-override:
 #  dxpr_theme/dxpr-theme-admin: false
 #  dxpr_theme/drupal-breadcrumbs: false
 #  dxpr_theme/drupal-comments: false
-#  dxpr_theme/drupal-pager: false
+  dxpr_theme/drupal-pager: false
 #  dxpr_theme/drupal-webform: false
 #  dxpr_theme/dxpr-theme-builder: false
 #  dxpr_theme/helper-classes: false

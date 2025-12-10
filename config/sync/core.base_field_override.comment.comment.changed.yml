@@ -1,0 +1,18 @@
+uuid: 0dbe2340-80d8-42fe-9eed-b461ba555c7c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.changed
+field_name: changed
+entity_type: comment
+bundle: comment
+label: Змінено
+description: 'Час, коли коментар був відредагований востаннє.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

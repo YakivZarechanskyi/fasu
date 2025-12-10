@@ -1,0 +1,35 @@
+uuid: 6d2beb77-c3d2-49f8-980d-2574aff64fe0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.management_staff.field_image
+    - field.field.node.management_staff.field_phone_number
+    - field.field.node.management_staff.field_position
+    - node.type.management_staff
+  module:
+    - user
+id: node.management_staff.teaser
+targetEntityType: node
+bundle: management_staff
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_phone_number: true
+  field_position: true
+  langcode: true

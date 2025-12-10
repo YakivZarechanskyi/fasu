@@ -1,0 +1,20 @@
+uuid: 4ebfb0f6-4adb-4558-8e9d-f1d47965de5e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.name
+field_name: name
+entity_type: comment
+bundle: comment
+label: "Назва (ім'я)"
+description: "Ім'я автора коментаря."
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

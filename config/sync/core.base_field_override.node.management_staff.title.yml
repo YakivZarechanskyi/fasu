@@ -1,0 +1,18 @@
+uuid: 6f0a66e6-546d-407f-9bf0-2f11a818320a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.management_staff
+id: node.management_staff.title
+field_name: title
+entity_type: node
+bundle: management_staff
+label: "Ім'я"
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

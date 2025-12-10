@@ -1,0 +1,18 @@
+uuid: 86cc8308-e9fc-4c30-a57f-0722e30f0e0f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.document
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.document
+target_entity_type_id: media
+target_bundle: document
+default_langcode: site_default
+language_alterable: false
