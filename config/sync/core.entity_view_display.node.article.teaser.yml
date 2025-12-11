@@ -10,13 +10,8 @@ dependencies:
     - node.type.article
   module:
     - datetime
-    - layout_builder
     - text
     - user
-third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
 _core:
   default_config_hash: O8PxzfG8DOHHRu6M23kwR6TDPq_MNfYQ10Mp367ICUQ
 id: node.article.teaser

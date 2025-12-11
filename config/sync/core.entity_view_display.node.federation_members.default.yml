@@ -9,13 +9,8 @@ dependencies:
     - field.field.node.federation_members.field_link
     - node.type.federation_members
   module:
-    - layout_builder
     - text
     - user
-third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
 id: node.federation_members.default
 targetEntityType: node
 bundle: federation_members

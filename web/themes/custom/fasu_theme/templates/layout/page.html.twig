@@ -65,7 +65,7 @@
 
 {% if not node.field_dth_page_layout.getString() and theme.settings.boxed_layout
   or node.field_dth_page_layout.getString() == 'boxed' %}
-<div class="dxpr-theme-boxed-container">
+<div class="dxpr-theme-boxed-container d-flex flex-column min-vh-100">
 {% endif %}
 
 {# Secondary Header #}
@@ -147,7 +147,7 @@
   {% endblock %}
 {% endif %}
 
-<div class="wrap-containers">
+<div class="wrap-containers flex-fill">
 
 {# Highlighted #}
 {% if page.highlighted %}

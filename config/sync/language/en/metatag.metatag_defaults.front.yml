@@ -1,3 +1,5 @@
-label: 'Front page'
 tags:
   title: 'Welcome! | [site:name]'
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'
+label: 'Front page'

@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: Посада
 vid: position
-description: 'Назва посади або ролі.'
+description: 'Назва посад або ролей.'
 weight: 0
 new_revision: false

@@ -1,0 +1,20 @@
+uuid: 7d611181-f52e-4723-89f4-5c2a35461825
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fasu_theme
+id: fasu_theme_pracyuenadrupal
+theme: fasu_theme
+region: footer_secondary
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Працює на Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

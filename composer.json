@@ -33,6 +33,8 @@
         "drupal/menu_multilingual": "^2.0",
         "drupal/metatag": "^2.2",
         "drupal/pathauto": "^1.14",
+        "drupal/quickedit": "^2.0",
+        "drupal/simple_sitemap": "^4.2",
         "drush/drush": "^13.7"
     },
     "conflict": {

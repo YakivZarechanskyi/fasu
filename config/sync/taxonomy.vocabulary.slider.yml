@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: Слайдер
 vid: slider
-description: null
+description: 'Для створення, редагування та зміни порядку слайдів в слайдері на головній сторінці.'
 weight: 0
 new_revision: false
