@@ -1,0 +1,12 @@
+uuid: a7d2a88b-40e2-44b9-ab45-48b710fe7671
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RDCkFL0NDt75Gwioooxo1iuA1S50xTVsBOgX__c6wTw
+id: '403'
+label: '403 доступ заборонено'
+tags:
+  robots: noindex
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'
