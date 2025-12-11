@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for FASU: Gin toolbar module.
+ */
+/**
+ * Implements hook_preprocess_toolbar().
+ */
+function fasu_gin_toolbar_preprocess_toolbar(&$variables) {
+  $user = \Drupal::currentUser();
+  $roles = $user->getRoles();
+  $variables['secondary_toolbar_frontend'] = !in_array('content_editor', $roles);
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function fasu_gin_toolbar_preprocess_page(&$variables) {
+  $user = \Drupal::currentUser();
+  $roles = $user->getRoles();
+
+  /** @var \Drupal\Core\Routing\AdminContext $admin_context */
+  $admin_context = \Drupal::service('router.admin_context');
+
+  if (in_array('content_editor', $roles) && $admin_context->isAdminRoute()) {
+    unset($variables['page']['gin_secondary_toolbar'], $variables['page']['breadcrumb']);
+  }
+}

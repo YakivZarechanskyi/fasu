@@ -1,0 +1,7 @@
+name: 'FASU: Gin toolbar'
+type: module
+description: 'Adds some custom toolbar display settings.'
+package: FASU
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:gin_toolbar

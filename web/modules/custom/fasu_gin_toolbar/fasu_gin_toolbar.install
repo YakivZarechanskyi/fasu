@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the FASU: Gin toolbar module.
+ */
+function fasu_gin_toolbar_install() {
+  module_set_weight('fasu_gin_toolbar', 10);
+}

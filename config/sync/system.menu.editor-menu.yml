@@ -1,0 +1,8 @@
+uuid: d3587023-9897-4b42-96d7-a9ca5ddc01b4
+langcode: uk
+status: true
+dependencies: {  }
+id: editor-menu
+label: 'Редактор матеріалів'
+description: 'Окреме адміністративне меню для редакторів вмісту.'
+locked: false
