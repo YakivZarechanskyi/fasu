@@ -23,7 +23,6 @@ dependencies:
     - filter
     - media
     - node
-    - path
     - system
     - taxonomy
     - toolbar
@@ -49,7 +48,6 @@ permissions:
   - 'create remote_video media'
   - 'create terms in position'
   - 'create terms in slider'
-  - 'create url aliases'
   - 'create video media'
   - 'delete any article content'
   - 'delete any audio media'
