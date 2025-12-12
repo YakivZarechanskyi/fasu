@@ -1,0 +1,20 @@
+uuid: a46f40a5-b1ce-4b98-8463-ca7592fd5215
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+  module:
+    - metatag
+id: media.remote_video.metatag
+field_name: metatag
+entity_type: media
+bundle: remote_video
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Обчислені метатеги для сутності.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

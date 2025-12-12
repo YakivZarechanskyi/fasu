@@ -1,0 +1,20 @@
+uuid: c02dadc7-282e-4ed7-931d-da93067af44e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.video
+  module:
+    - metatag
+id: media.video.metatag
+field_name: metatag
+entity_type: media
+bundle: video
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Обчислені метатеги для сутності.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

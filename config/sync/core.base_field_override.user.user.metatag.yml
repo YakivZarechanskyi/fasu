@@ -1,0 +1,19 @@
+uuid: e38501e4-7edf-4c36-a4b5-06f20e2a4281
+langcode: uk
+status: true
+dependencies:
+  module:
+    - metatag
+    - user
+id: user.user.metatag
+field_name: metatag
+entity_type: user
+bundle: user
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Обчислені метатеги для сутності.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

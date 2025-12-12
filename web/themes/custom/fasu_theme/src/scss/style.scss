@@ -66,3 +66,13 @@
 .region-footer-secondary {
   padding: 0 1rem;
 }
+
+.body--dxpr-theme-nav-mobile {
+  .wrap-branding {
+    height: var(--dxt-setting-header-mobile-height);
+  }
+}
+
+#block-fasu-theme-nazvasaytu {
+  margin: 0 10px;
+}

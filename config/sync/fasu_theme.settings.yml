@@ -121,7 +121,7 @@ background_image_attachment: fixed
 header_top_layout: '0'
 header_style: normal
 header_top_bg_opacity: '0.44'
-header_top_height: '81'
+header_top_height: '118'
 header_top_fixed: 0
 header_top_sticky: 0
 header_top_sticky_show: always
@@ -219,7 +219,7 @@ title_type:
   italic: 0
 page_title_image_path: ''
 background_image_path: ''
-logo_height: '80'
+logo_height: '82'
 second_header_sticky: 0
 dropdown_width: '160'
 header_mobile_fixed: 0

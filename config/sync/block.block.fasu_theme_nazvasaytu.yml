@@ -1,0 +1,25 @@
+uuid: 9cb43991-66ed-424f-8d0d-b90076357683
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4cf1f101-75c9-49b7-b0ad-68efe43bd287'
+  module:
+    - block_content
+  theme:
+    - fasu_theme
+id: fasu_theme_nazvasaytu
+theme: fasu_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'block_content:4cf1f101-75c9-49b7-b0ad-68efe43bd287'
+settings:
+  id: 'block_content:4cf1f101-75c9-49b7-b0ad-68efe43bd287'
+  label: 'Назва сайту'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

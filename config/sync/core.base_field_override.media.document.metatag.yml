@@ -1,0 +1,20 @@
+uuid: 917b43b5-35dd-4b55-b594-3a6b7eb8837d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.document
+  module:
+    - metatag
+id: media.document.metatag
+field_name: metatag
+entity_type: media
+bundle: document
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Обчислені метатеги для сутності.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed
