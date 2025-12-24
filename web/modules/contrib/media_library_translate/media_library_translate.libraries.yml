@@ -1,8 +1,0 @@
-admin:
-  css:
-    component:
-      css/media_library_translate.admin.css: {}
-  js:
-    js/media_library_translate.js: {}
-  dependencies:
-    - media_library/ui
