@@ -6,7 +6,9 @@ dependencies:
     - field.field.node.dokumenty.field_documents
     - node.type.dokumenty
   module:
-    - file
+    - media_library
+    - media_library_edit
+    - media_library_translate
     - path
 id: node.dokumenty.default
 targetEntityType: node
@@ -20,12 +22,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_documents:
-    type: file_generic
-    weight: 8
+    type: media_library_widget
+    weight: 26
     region: content
     settings:
-      progress_indicator: bar
-    third_party_settings: {  }
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+        edit_form_mode: default
+      media_library_translate:
+        show_translation: '1'
   langcode:
     type: language_select
     weight: 1
@@ -45,6 +52,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -67,6 +79,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

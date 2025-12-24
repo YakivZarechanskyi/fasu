@@ -26,7 +26,7 @@ content:
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
+      progress_indicator: bar
     third_party_settings: {  }
   langcode:
     type: language_select

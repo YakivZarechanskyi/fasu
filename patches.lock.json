@@ -1,0 +1,17 @@
+{
+    "_hash": "40ae1a0cb1f5427ba22b9fa524b7de6409df576c826eebdf2a6a970790dc56c3",
+    "patches": {
+        "drupal/media_library_translate": [
+            {
+                "package": "drupal/media_library_translate",
+                "description": "Fixing CSS positioning with Media Library Edit module",
+                "url": "patches/Fixing_CSS_positioning_with_Media_Library_Edit_module.patch",
+                "sha256": "867ebe43db443b6cb5d1ae771e6e69f441d4c4f644b2a86c1326a8cb443b2271",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

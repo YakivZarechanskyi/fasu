@@ -1,19 +1,11 @@
-uuid: 60f31b42-deea-4328-b38e-ee43bfef7f23
+uuid: 3cdb7498-d2ad-417e-9452-fd60fcd8b332
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.node.field_documents
+    - media.type.document
     - node.type.dokumenty
-  module:
-    - content_translation
-    - file
-third_party_settings:
-  content_translation:
-    translation_sync:
-      description: description
-      target_id: '0'
-      display: '0'
 id: node.dokumenty.field_documents
 field_name: field_documents
 entity_type: node
@@ -25,10 +17,13 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt pdf doc docx xls'
-  max_filesize: ''
-  description_field: true
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

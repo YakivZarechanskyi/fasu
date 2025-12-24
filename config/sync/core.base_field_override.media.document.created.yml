@@ -11,7 +11,7 @@ bundle: document
 label: Створено
 description: "Час створення медіа-об'єкта."
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
 settings: {  }
