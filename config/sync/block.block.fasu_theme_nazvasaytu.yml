@@ -11,7 +11,7 @@ dependencies:
 id: fasu_theme_nazvasaytu
 theme: fasu_theme
 region: navigation
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:4cf1f101-75c9-49b7-b0ad-68efe43bd287'
 settings:

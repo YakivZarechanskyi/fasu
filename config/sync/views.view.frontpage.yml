@@ -363,7 +363,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"d-flex flex-column flex-sm-row align-items-start\">\r\n<div class=\"flex-shrink-0 mb-2 mb-sm-0 me-sm-3\">\r\n{{ field_image }}\r\n</div>\r\n<div class=\"flex-grow-1\">\r\n<h4>{{ title }}</h4>\r\n{{ field_contact_info }}\r\n</div>\r\n</div>\r\n<div class=\"mt-3\">\r\n{{ field_description }}\r\n</div>"
+            text: "\r\n      <div class=\"federation-media d-flex justify-content-center py-3 py-sm-4\">\r\n        {{ field_image }}\r\n      </div>\r\n\r\n      <div class=\"federation-content py-3 py-sm-4\">\r\n        <h4 class=\"mb-2\">{{ title }}</h4>\r\n        {{ field_contact_info }}\r\n        {{ field_description }}\r\n      </div>\r\n\r\n      <div class=\"federation-divider border-bottom\"></div>"
             make_link: false
             path: ''
             absolute: false
@@ -571,12 +571,12 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: col
+          row_class: 'col federation-item'
           default_row_class: false
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
