@@ -11,9 +11,9 @@ dependencies:
 third_party_settings:
   content_translation:
     translation_sync:
-      target_id: target_id
-      display: display
       description: description
+      target_id: '0'
+      display: '0'
 id: node.dokumenty.field_documents
 field_name: field_documents
 entity_type: node
