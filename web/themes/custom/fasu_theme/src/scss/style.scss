@@ -78,20 +78,25 @@
 }
 
 .site-name-block {
-  $eng-var: 0;
-
-  &.eng-lang {
-    $eng-var: 290px;
-  }
-
-  & > span {
+  &.eng-lang > span {
     font-size: 32px;
 
-    @media screen and (calc(385px + $eng-var) < width) and (width <= calc(670px + $eng-var)) {
+    @media screen and (470px < width) and (width <= 961px) {
       font-size: 24px;
     }
 
-    @media screen and (width <= calc(385px + $eng-var)) {
+    @media screen and (width <= 470px) {
+      font-size: 16px;
+    }
+  }
+  & > span {
+    font-size: 32px;
+
+    @media screen and (385px < width) and (width <= 670px) {
+      font-size: 24px;
+    }
+
+    @media screen and (width <= 385px) {
       font-size: 16px;
     }
   }

@@ -70,15 +70,28 @@
   margin: 0 10px;
 }
 
+.site-name-block.eng-lang > span {
+  font-size: 32px;
+}
+@media screen and (470px < width) and (width <= 961px) {
+  .site-name-block.eng-lang > span {
+    font-size: 24px;
+  }
+}
+@media screen and (width <= 470px) {
+  .site-name-block.eng-lang > span {
+    font-size: 16px;
+  }
+}
 .site-name-block > span {
   font-size: 32px;
 }
-@media screen and (675px < width) and (width <= 960px) {
+@media screen and (385px < width) and (width <= 670px) {
   .site-name-block > span {
     font-size: 24px;
   }
 }
-@media screen and (width <= 675px) {
+@media screen and (width <= 385px) {
   .site-name-block > span {
     font-size: 16px;
   }
