@@ -28,7 +28,7 @@
 /web/core
 /web/modules/README.txt
 /web/modules/contrib/*
-!/web/modules/contrib/media_library_translate/css/media_library_translate.admin.css
+!/web/modules/contrib/media_library_translate
 /web/profiles/README.txt
 /web/profiles/contrib
 /web/sites/development.services.yml
