@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3.6",
         "drupal/amswap": "^3.2",
         "drupal/core-composer-scaffold": "^11.2",
@@ -44,13 +45,14 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "drupal/core-composer-scaffold": true,
-            "drupal/core-recipe-unpack": true,
-            "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
+            "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-recipe-unpack": true,
             "php-http/discovery": true,
-            "php-tuf/composer-integration": true
+            "php-tuf/composer-integration": true,
+            "phpstan/extension-installer": true
         },
         "sort-packages": true
     },
@@ -112,6 +114,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/media_library_translate": {
+                "Fixing CSS positioning with Media Library Edit module": "patches/Fixing_CSS_positioning_with_Media_Library_Edit_module.patch"
+            }
         }
     }
 }

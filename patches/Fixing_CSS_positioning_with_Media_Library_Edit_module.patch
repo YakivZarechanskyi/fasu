@@ -1,0 +1,49 @@
+Subject: [PATCH] Fixing CSS positioning with Media Library Edit module
+---
+Index: media_library_translate/css/media_library_translate.admin.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/media_library_translate.admin.css b/css/media_library_translate.admin.css
+--- a/css/media_library_translate.admin.css	(revision 37dacb2ab4f4e350268d178c96eded1a2facd3e6)
++++ b/css/media_library_translate.admin.css	(date 1766575709058)
+@@ -1,9 +1,10 @@
+-.media-library-translate__link{
++
++.media-library-translate__link {
+   position: absolute;
+-  top: 0.625rem;
+-  right: 2.625rem;
+-  width: 1.5rem;
+-  height: 1.5rem;
++  top: .85rem;
++  right: 5.625rem;
++  width: 2rem;
++  height: 2rem;
+   margin: 5px;
+   padding: 0;
+   transition: 0.2s border-color;
+@@ -11,16 +12,14 @@
+   border: 2px solid #ccc;
+   border-radius: 20px;
+   background: url(../icons/translate.svg) #fff center no-repeat;
+-  background-size: 16px 16px;
+-  text-shadow: none;
++  background-size: 20px 20px;
+   box-sizing: border-box;
++  text-shadow: none;
+ }
+-
+-.media-library-translate__link:hover{
+-   color: transparent;
++.media-library-translate__link:hover {
++  color: transparent;
+ }
+-
+ /* Hide media library edit modal backdrop if wrapped inside .ui-dialog */
+-.ui-dialog .media-library-translate__link::before{
+-  display:none;
++.ui-dialog .media-library-translate__link::before {
++  display: none;
+ }
