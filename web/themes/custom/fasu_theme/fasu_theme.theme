@@ -59,3 +59,10 @@ function fasu_theme_preprocess_links__language_block(&$variables) {
     $link['link']['#options']['attributes']['class'][] = 'page-link';
   }
 }
+
+/**
+ * Implements hook_preprocess_file_link().
+ */
+function fasu_theme_preprocess_file_link(&$variables) {
+  $variables['link']['#attributes']['target'] = '_blank';
+}
