@@ -1,0 +1,14 @@
+name: Media Library Translate
+description: 'Provides a translate button to the Media Library widget when an item is selected.'
+type: module
+package: Media
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - drupal:media
+  - drupal:media_library
+  - drupal:content_translation
+
+# Information added by Drupal.org packaging script on 2025-04-22
+version: '1.0.4'
+project: 'media_library_translate'
+datestamp: 1745351506

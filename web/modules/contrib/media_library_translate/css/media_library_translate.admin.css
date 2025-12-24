@@ -1,0 +1,25 @@
+
+.media-library-translate__link {
+  position: absolute;
+  top: .85rem;
+  right: 5.625rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 5px;
+  padding: 0;
+  transition: 0.2s border-color;
+  color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background: url(../icons/translate.svg) #fff center no-repeat;
+  background-size: 20px 20px;
+  box-sizing: border-box;
+  text-shadow: none;
+}
+.media-library-translate__link:hover {
+  color: transparent;
+}
+/* Hide media library edit modal backdrop if wrapped inside .ui-dialog */
+.ui-dialog .media-library-translate__link::before {
+  display: none;
+}

@@ -1,0 +1,122 @@
+<?php
+
+/**
+ * @file
+ * Allows Access control on basis of user.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Field\WidgetInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Url;
+use Drupal\media_library\MediaLibraryUiBuilder;
+
+/**
+ * Implements hook_field_widget_settings_summary_alter().
+ */
+function media_library_translate_field_widget_settings_summary_alter(&$summary, $context) {
+  $plugin_id = $context['widget']->getPluginId();
+  if ($plugin_id == 'media_library_widget') {
+    $settings = $context['widget']->getThirdPartySettings('media_library_translate');
+    if (isset($settings['show_translation']) && $settings['show_translation']) {
+      $summary[] = t('Show translation button');
+    }
+  }
+}
+
+/**
+ * Implements hook_field_widget_third_party_settings_form().
+ */
+function media_library_translate_field_widget_third_party_settings_form(WidgetInterface $plugin, FieldDefinitionInterface $field_definition, $form_mode, $form, FormStateInterface $form_state) {
+  $element = [];
+  $plugin_id = $plugin->getPluginId();
+
+  if ($plugin_id == 'media_library_widget') {
+    $settings = $plugin->getThirdPartySettings('media_library_translate');
+    $element['show_translation'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Show translation button'),
+      '#default_value' => (isset($settings['show_translation'])) ? $settings['show_translation'] : '',
+    ];
+  }
+
+  return $element;
+}
+
+/**
+ * Implements hook_field_widget_single_element_form_alter().
+ */
+function media_library_translate_field_widget_single_element_form_alter(array &$element, FormStateInterface $form_state, array $context) {
+  $plugin_id = $context['widget']->getPluginId();
+  if ($plugin_id == 'media_library_widget') {
+    $settings = $context['widget']->getThirdPartySettings('media_library_translate');
+    if (isset($settings['show_translation']) && $settings['show_translation']) {
+      if (isset($context['items'])) {
+
+        if ($media = $context['items']->entity) {
+          if ($media->access('update') && $translate_template = $media->getEntityType()->getLinkTemplate('drupal:content-translation-overview')) {
+            $element['#attributes']['class'][] = 'js-media-library-translate-' . Html::cleanCssIdentifier($context['items']->getFieldDefinition()->getName()) . '-wrapper';
+            foreach (Element::children($element['selection']) as $key) {
+              $translate_url_query_params = [
+                'media_library_translate' => 'ajax',
+              ];
+              $dialog_options = MediaLibraryUiBuilder::dialogOptions();
+              $translate_template = $media->getEntityType()->getLinkTemplate('drupal:content-translation-overview');
+              $translate_url = Url::fromUserInput(str_replace('{media}', $element['selection'][$key]['target_id']['#value'], $translate_template) . '?' . UrlHelper::buildQuery($translate_url_query_params));
+              $element['selection'][$key]['media_translate'] = [
+                '#type' => 'link',
+                '#title' => t('Translate media item'),
+                '#url' => $translate_url,
+                '#attributes' => [
+                  'class' => [
+                    'js-media-library-translate-link',
+                    'media-library-translate__link',
+                    'use-ajax',
+                  ],
+                  'target' => '_blank',
+                  'data-dialog-options' => json_encode([
+                    'height' => $dialog_options['height'],
+                    'width' => $dialog_options['width'],
+                    'classes' => ['ui-dialog-content' => 'media-library-translate__modal'],
+                  ]),
+                  'data-dialog-type' => 'modal',
+                ],
+                '#attached' => [
+                  'library' => [
+                    'media_library_translate/admin',
+                    'core/drupal.dialog.ajax',
+                  ],
+                ],
+              ];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function media_library_translate_help($path) {
+  switch ($path) {
+    case 'help.page.media_library_translate':
+      $output = "";
+      $output .= "<h3>" . t('About') . "</h3>";
+      $output .= "<p>" . t('This module enhances the user experience by providing a translate button
+      on the media field type within the content creation, editing, and translation pages.
+      For more information, visit <a href=":project">Media Library Translate</a> page.',
+      [':project' => 'https://www.drupal.org/project/media_library_translate']) . "</p>";
+      $output .= "<h3>" . t('Uses') . "</h3>";
+      $output .= "<p>" . t('Using this module user translate media field on content creating, edit page without going to media list page for add particular image translation') . "</p>";
+      $output .= "<h6>" . t('Configuration') . "</h6>";
+      $output .= "<p>" . t('Navigate to the Media Library widget settings and check the "Show translation button" option.') . "</p>";
+      $output .= "<h6>" . t('Translation Button') . "</h6>";
+      $output .= "<p>" . t('A translation button will appear in the Media Library widget for media items and Clicking on this button opens a modal for translating the media item.') . "</p>";
+      return $output;
+  }
+}
