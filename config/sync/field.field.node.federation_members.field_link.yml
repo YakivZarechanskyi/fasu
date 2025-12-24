@@ -14,7 +14,7 @@ bundle: federation_members
 label: Посилання
 description: 'Посилання на зовнішні ресурси учасника федерації.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
