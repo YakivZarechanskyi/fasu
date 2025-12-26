@@ -1,1 +1,5 @@
 label: Officials
+display:
+  default:
+    display_options:
+      title: Officials
