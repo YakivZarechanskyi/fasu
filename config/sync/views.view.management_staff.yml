@@ -293,7 +293,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<article class=\"card staff-card h-100 mx-auto\">\r\n<div class=\"card-img-top\">{{ field_image }}</div>\r\n<div class=\"card-body d-flex text-center d-flex flex-column align-items-center\">\r\n<h3 class=\"card-title h5 field--label\">{{ title }}</h3>\r\n<div class=\"mt-auto\">\r\n<div class=\"small text-muted\">{{ field_position }}</div>\r\n<div class=\"small text-muted phone-number\">{{ field_phone_number }}</div>\r\n</div>\r\n</div>\r\n</article>"
+            text: "<article class=\"card staff-card h-100 mx-auto\">\r\n<div class=\"card-img-top\">{{ field_image }}</div>\r\n<div class=\"card-body d-flex text-center d-flex flex-column align-items-center\">\r\n<h3 class=\"card-title h5 field--label\">{{ title }}</h3>\r\n<div class=\"mt-auto\">\r\n<div class=\"small text-muted\">{{ field_position }}</div>\r\n{% if field_phone_number %}\r\n<div class=\"small text-muted phone-number\">{{ field_phone_number }}</div>\r\n{% endif %}\r\n</div>\r\n</div>\r\n</article>"
             make_link: false
             path: ''
             absolute: false
@@ -516,7 +516,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: management-staff
+      path: officials
     cache_metadata:
       max-age: -1
       contexts:
