@@ -169,4 +169,14 @@
   }
 }
 
+.field--type-datetime {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  header#page-title {
+    padding-bottom: 42px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

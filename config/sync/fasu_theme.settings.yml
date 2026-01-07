@@ -68,10 +68,10 @@ headings_uppercase: 0
 headings_bold: 0
 body_mobile_font_size: '14'
 nav_mobile_font_size: '14'
-h1_mobile_font_size: '52'
-h2_mobile_font_size: '38'
-h3_mobile_font_size: '29'
-h4_mobile_font_size: '24'
+h1_mobile_font_size: '34'
+h2_mobile_font_size: '28'
+h3_mobile_font_size: '22'
+h4_mobile_font_size: '20'
 body_font_face: SF_Segoe_Roboto
 body_font_face_selector: body
 headings_font_face: SF_Segoe_Roboto
@@ -109,7 +109,7 @@ divider_color_custom: '#eeeeee'
 page_title_breadcrumbs: 1
 page_title_home_hide: 1
 page_title_align: left
-page_title_height: '100'
+page_title_height: '145'
 page_title_animate: bounce-dxpr
 page_title_image_opacity: '1'
 page_title_image_style: cover
@@ -161,7 +161,7 @@ menu_border_position_offset_sticky: '0'
 menu_border_size: '2'
 menu_border_color: ''
 menu_border_color_custom: ''
-header_mobile_height: '80'
+header_mobile_height: '100'
 secondary_header_hide: hidden_none
 custom_css_site: ''
 custom_javascript_site: ''
