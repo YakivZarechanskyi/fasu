@@ -1,0 +1,9 @@
+label: Presidium
+display:
+  default:
+    display_options:
+      title: 'FASU Presidium'
+  page_1:
+    display_options:
+      menu:
+        title: Presidium
