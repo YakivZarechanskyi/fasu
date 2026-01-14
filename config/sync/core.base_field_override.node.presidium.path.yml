@@ -1,0 +1,20 @@
+uuid: 4af163ac-a646-45c4-a056-294eff4c8f19
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.presidium
+  module:
+    - path
+id: node.presidium.path
+field_name: path
+entity_type: node
+bundle: presidium
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

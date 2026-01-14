@@ -1,0 +1,18 @@
+uuid: 46d0ff84-a0f1-490a-837f-d158d9ca2744
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.presidium
+id: node.presidium.created
+field_name: created
+entity_type: node
+bundle: presidium
+label: Створено
+description: 'Дата й час створення матеріалу.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

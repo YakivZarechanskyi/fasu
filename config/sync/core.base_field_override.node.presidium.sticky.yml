@@ -1,14 +1,14 @@
-uuid: 0536e85d-38d3-4693-90d5-ad2a5d14e40c
+uuid: c4ee27d6-106a-4f58-ba4a-5f6efa717f6a
 langcode: uk
 status: true
 dependencies:
   config:
     - node.type.presidium
-id: node.presidium.promote
-field_name: promote
+id: node.presidium.sticky
+field_name: sticky
 entity_type: node
 bundle: presidium
-label: 'Винесено на головну сторінку'
+label: 'Прикріплено зверху списків'
 description: ''
 required: false
 translatable: false
