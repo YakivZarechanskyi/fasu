@@ -228,6 +228,7 @@ display:
       menu:
         type: normal
         title: Президія
+        weight: -47
         menu_name: main
         parent: ''
     cache_metadata:
