@@ -1,0 +1,22 @@
+uuid: 0536e85d-38d3-4693-90d5-ad2a5d14e40c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.presidium
+id: node.presidium.promote
+field_name: promote
+entity_type: node
+bundle: presidium
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

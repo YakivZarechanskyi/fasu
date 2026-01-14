@@ -1,0 +1,18 @@
+uuid: 7a01019b-24b9-4e09-a5c5-e6d4f227949b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.presidium
+id: node.presidium.title
+field_name: title
+entity_type: node
+bundle: presidium
+label: "Ім'я учасника президії"
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

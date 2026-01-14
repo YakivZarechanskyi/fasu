@@ -15,6 +15,7 @@ dependencies:
     - node.type.federation_members
     - node.type.management_staff
     - node.type.page
+    - node.type.presidium
     - taxonomy.vocabulary.position
     - taxonomy.vocabulary.slider
   module:
@@ -45,6 +46,7 @@ permissions:
   - 'create image media'
   - 'create management_staff content'
   - 'create media'
+  - 'create presidium content'
   - 'create remote_video media'
   - 'create terms in position'
   - 'create terms in slider'
@@ -56,6 +58,7 @@ permissions:
   - 'delete any image media'
   - 'delete any management_staff content'
   - 'delete any media'
+  - 'delete any presidium content'
   - 'delete any remote_video media'
   - 'delete any video media'
   - 'delete media'
@@ -63,6 +66,7 @@ permissions:
   - 'delete own federation_members content'
   - 'delete own files'
   - 'delete own management_staff content'
+  - 'delete own presidium content'
   - 'delete terms in position'
   - 'delete terms in slider'
   - 'edit any article content'
@@ -73,6 +77,7 @@ permissions:
   - 'edit any image media'
   - 'edit any management_staff content'
   - 'edit any page content'
+  - 'edit any presidium content'
   - 'edit any remote_video media'
   - 'edit any video media'
   - 'edit own article content'
@@ -80,6 +85,7 @@ permissions:
   - 'edit own federation_members content'
   - 'edit own management_staff content'
   - 'edit own page content'
+  - 'edit own presidium content'
   - 'edit terms in position'
   - 'edit terms in slider'
   - 'translate any entity'

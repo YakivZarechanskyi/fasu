@@ -1,0 +1,17 @@
+uuid: ca7b83cf-f0f6-4be0-b320-7fbcefd34055
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Президія
+type: presidium
+description: 'Учасник президії ФАСУ.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

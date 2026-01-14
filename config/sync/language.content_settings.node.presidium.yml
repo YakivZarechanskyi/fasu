@@ -1,0 +1,11 @@
+uuid: 8f975052-6405-4060-ac97-55759af6db98
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.presidium
+id: node.presidium
+target_entity_type_id: node
+target_bundle: presidium
+default_langcode: site_default
+language_alterable: false
